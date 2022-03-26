@@ -10,9 +10,19 @@ import Staking from './components/Staking'
 import Sales from './components/Sales'
 import Project from "./components/Project";
 import TokenInfo from "./components/TokenInfo";
+import { Web3ReactProvider } from '@web3-react/core'
+
+import { Web3Provider } from "@ethersproject/providers";
+
+function getLibrary(provider) {
+
+return new Web3Provider(provider);
+
+}
 function App() {
   return (
     <div> 
+      <Web3ReactProvider getLibrary={getLibrary}>
        <Router>
          <Header></Header>    
          <Routes>
@@ -23,6 +33,7 @@ function App() {
          <Route path="/token-info" element={<TokenInfo />} />
         </Routes>
         </Router>
+        </Web3ReactProvider>
       
     </div>
    
