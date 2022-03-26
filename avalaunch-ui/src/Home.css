@@ -1,0 +1,21 @@
+.contento {
+    justify-self: start;
+    align-self: flex-start;
+    position: absolute;
+    color: white;
+}
+
+
+.bg {
+
+    max-width: 100%; /* You must set a specified height */
+    margin-top: -50px;
+    background-position: center; /* Center the image */
+    position: absolute;
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: contain; 
+}
+
+.boba { 
+    margin-left: 20rem;
+}
