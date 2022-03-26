@@ -9,6 +9,7 @@ import Home from './components/Home'
 import Staking from './components/Staking'
 import Sales from './components/Sales'
 import Project from "./components/Project";
+import TokenInfo from "./components/TokenInfo";
 function App() {
   return (
     <div> 
@@ -19,6 +20,7 @@ function App() {
          <Route path="/staking" element={<Staking />} />
          <Route path="/sales" element={<Sales />} />
          <Route path="/project" element={<Project />} />
+         <Route path="/token-info" element={<TokenInfo />} />
         </Routes>
         </Router>
       
