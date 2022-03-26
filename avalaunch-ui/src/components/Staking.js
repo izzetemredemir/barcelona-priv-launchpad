@@ -95,24 +95,31 @@ const onWithdrawMaxPressed = async () => {
     return (
       <main>
         <div className="Home"> 
+       <img className="allo" src="https://i.imgur.com/fojqmGZ.png"></img>
         
      <div className='container'>
-    
-      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-    
+      <div className='cardos'>
+      <div class="row row-cols-1 row-cols-md-2 mb-2">
+      </div>
+     <div className='cardo1'> 
       <div class="col">
-        <div class="card mb-6 rounded- shadow-sm">
-          <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">Stake Babush</h4>
+        
+          <div className='cardo-header-1'>
+          
+            <h4 className='stake'>Stake BABUSH</h4>
           </div>
           
+          
           <div class="card-body">
-            <ul class="list-unstyled mt-3 mb-4">   
-              <li><button id="depoitmax" onClick={onDepositMaxPressed}>Max </button></li>           
+            <div className='balance'>Balance:</div> <div className='balance2'>1500</div>
+          <ul className='buttono'> 
+              <li><button id="depoitmax"className='bora'onClick={onDepositMaxPressed}>Max </button></li>           
             </ul>     
           <div class="input-group">
-            <input type="text" className="form-control" id="depositInput" placeholder="XAVA"/>
-            <button type="submit"  onClick={onDepositPressed} className="btn btn-primary">Deposit</button>
+            <input type="text" className="form-control" id="depositInput" placeholder="BABUSH"/>
+            <div className='buttono2'>
+            <button type="submit"  onClick={onDepositPressed} className="butoncuk">Deposit</button>
+            </div>
           </div>      
           </div>
         
@@ -122,58 +129,73 @@ const onWithdrawMaxPressed = async () => {
      
        </div>    
       <div class="col">
-        <div class="card mb-6 rounded- shadow-sm">
-          <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">Withdraw Babush</h4>
+      <div className='cardo1'>
+          <div className="cardo-header-2">
+            <h4 className="withdraw">Withdraw BABUSH</h4>
           </div>
-          <div class="card-body">          
-            <ul class="list-unstyled mt-3 mb-4">
-            <li><button id="erc20" onClick={onWithdrawMaxPressed}>    Max     </button></li>              
+          <div class="card-body">    
+          <div className='balance'>Balance:</div> <div className='balance2'>2500</div>      
+            <ul className='buttono'>
+            <button id="erc20" className='bora' onClick={onWithdrawMaxPressed}> Max </button>             
             </ul>   
           <div class="input-group">
-            <input type="text" className="form-control" id="withdrwaInput" placeholder="XAVA"/>
-            <button type="submit"  onClick={onWithdrawPressed} className="btn btn-primary">Withdraw</button>
+            <input type="text" className="form-control" id="withdrwaInput" placeholder="BABUSH"/>
+            <button type="submit" className="butoncuk"  onClick={onWithdrawPressed} >Withdraw</button>
           </div>    
           </div>
         </div>
       </div>   
     </div>    
       </div>
-    <div className="container ">
-      <div className='babush1'>
-    <h2 className="pb-2">Babush Tokens Staked</h2>
+    <div className="containerto">
+      <div className='babush-header'>
+    <h2 className="pb-2">BABUSH Tokens Staked</h2>
     </div>
+    <div className='infoo'>
     <div className="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      
       <div className="feature col">
         
         <div className="feature-icon bg-primary bg-gradient">
         </div>
+        <div className='info-head'>
         <h2>Pool Info</h2>
+        </div>
    
         <p>startTimestamp :<SimpleDateTime dateSeparator="-" format="MYD" timeSeparator=":" meridians="1">{startTimestamp}</SimpleDateTime></p>
         <p>endTimestamp :<SimpleDateTime dateSeparator="-" format="MYD" timeSeparator=":" meridians="1">{endTimestamp}</SimpleDateTime></p>
          
       </div>
+      <div className= "info-cardo">
       <div className="feature col">
         <div className="feature-icon bg-primary bg-gradient">
 
         </div>
+         
+        <div className='info-head'>
         <h2>Deposit Info</h2>
+        </div>
         <p>Deposit Fee: {depositFeePercent}</p>
         <p>Deposit Fee Precision {depositFeePrecision}</p>
+            </div>
             </div>
       <div className="feature col">
         <div className="feature-icon bg-primary bg-gradient">
 
         </div>
+        <div className='info-head'>
         <h2>Reward Info</h2>
+        </div>
         <p>Total Rewards {totalRewards}</p>
         <p>Total Pending {totalPending}</p>
         <p>paidOut: {paidOut}</p>
        </div>
     </div>
+    </div>
   </div>    
   </div>
+  <div></div>
+  <div></div>
     </main>    
     )
   }

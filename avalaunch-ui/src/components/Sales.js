@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import { useEffect, useState } from "react";
 
 import  {getNumberOfSalesDeployed,getAllSales} from "../utils/SalesFactory";
+import "./Sales.css"
 
   const Sales = (props) => {
 
@@ -33,13 +34,13 @@ import  {getNumberOfSalesDeployed,getAllSales} from "../utils/SalesFactory";
 
     return (
     <div className="Sales"> 
+     <img className='launch' src= "https://i.imgur.com/gLxdmyh.png"></img>
             <div className="px-4 py-5 my-5 text-center">
-            <img className="d-block mx-auto mb-4" src="https://getbootstrap.com/docs/5.1/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"/>
-            <h1 className="display-5 fw-bold">Sales Page</h1>
+            
             <div className="col-lg-6 mx-auto">          
             </div>
         </div>
-        <div className="container">
+        <div className="containertom">
               <table class="table">
         <thead class="thead-dark">
           <tr>
