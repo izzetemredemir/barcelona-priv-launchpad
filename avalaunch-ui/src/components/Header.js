@@ -2,6 +2,8 @@ import React from 'react'
 
 import { useEffect, useState } from "react";
 import { connectWallet, getCurrentWalletConnected} from "../utils/wallet.js";
+import "./Header.css"
+
 
 
 
@@ -44,20 +46,25 @@ const Header = (props) => {
     };
 
     return (
-      <div className='container'>
-        <header className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-        <a href="/" className="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-        </a>
 
-        <ul className="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="/" className="nav-link px-2 link-secondary">Home</a></li>
-          <li><a href="/staking" className="nav-link px-2 link-dark">Allocation Staking</a></li>
-          <li><a href="/sales" className="nav-link px-2 link-dark">Sales</a></li>
-        </ul>
+      <div className='containert'>
+     
+        <header className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+        <a href="/" className="logo"> <img src='https://i.imgur.com/G5OYSzC.png' alt="" width="100" height="57"/> </a> 
+       
+        <div className='links'>
+        <ul className="nav col-12 col-md-auto mb-2 justify-content-center color-white mb-md-0">
+          <div className='navlinks'>
+          <li><a c href="/" className="nav-link text-white">Home</a></li>
+          <li><a href="/staking" className="nav-link text-white ">Allocation Staking</a></li>
+          <li><a href="/sales" className="nav-link text-white">Sales</a></li>
+          </div>
+        </ul> 
+        </div>
 
         <div className="col-md-3 text-end">
           
-          <button variant="primary" onClick={connectWalletPressed}>
+          <button className="button1" variant="primary" onClick={connectWalletPressed}>
           {walletAddress.length > 0 ? (
             "Connected: " +
             String(walletAddress).substring(0, 6) +
@@ -69,6 +76,7 @@ const Header = (props) => {
         </div>
       </header>
     </div>
+
    );
   };
   
