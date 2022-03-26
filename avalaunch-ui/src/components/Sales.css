@@ -1,15 +1,26 @@
 .launch {
     width: 102rem;
-    margin-top: -25px;
+    margin-top: -50px;
+    position:absolute;
 }
 
 .containertom {
-   border: 3px solid; 
+   border: 2px solid  rgb(0, 2, 60);; 
 
+   position: absolute;
    margin-left: 6rem;
    border-radius: 2rem;
    width: 90rem;
-   height: 30rem;
-   margin-top: -8rem;
+   height: 12rem;
+   margin-top: 12rem;
+   color: white;
      
+}
+
+.testtoken {
+    color: white;
+}
+
+.infoz {
+    color: white;
 }

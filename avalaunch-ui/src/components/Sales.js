@@ -34,7 +34,7 @@ import "./Sales.css"
 
     return (
     <div className="Sales"> 
-     <img className='launch' src= "https://i.imgur.com/gLxdmyh.png"></img>
+     <img className='launch' src="https://i.imgur.com/hM5LHkO.png"></img>
             <div className="px-4 py-5 my-5 text-center">
             
             <div className="col-lg-6 mx-auto">          

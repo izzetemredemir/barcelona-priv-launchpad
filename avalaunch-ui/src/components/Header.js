@@ -54,9 +54,13 @@ const Header = (props) => {
        
         <div className='links'>
         <ul className="nav col-12 col-md-auto mb-2 justify-content-center color-white mb-md-0">
-          <div className='navlinks'>
+          <div className='navlinks'> 
+          
           <li><a c href="/" className="nav-link text-white">Home</a></li> 
+         
+          <div className='homme'>
           <li><a href="/staking" className="nav-link text-white ">Allocation Staking</a></li>
+          </div>
           <li><a href="/sales" className="nav-link text-white">Launch </a></li> 
         </div>
         </ul> 
