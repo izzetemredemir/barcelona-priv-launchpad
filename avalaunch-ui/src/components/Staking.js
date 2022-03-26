@@ -8,7 +8,7 @@ import {getCurrentWalletConnected} from "../utils/wallet";
 
 import {getBalanceOf} from "../utils/XavaToken";
 import SimpleDateTime  from 'react-simple-timestamp-to-date';
-
+import "./Staking.css"
 
 const Staking = (props) => {
 
@@ -97,12 +97,15 @@ const onWithdrawMaxPressed = async () => {
         <div className="Home"> 
         
      <div className='container'>
+    
       <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+    
       <div class="col">
         <div class="card mb-6 rounded- shadow-sm">
           <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">Stake Xava</h4>
+            <h4 class="my-0 fw-normal">Stake Babush</h4>
           </div>
+          
           <div class="card-body">
             <ul class="list-unstyled mt-3 mb-4">   
               <li><button id="depoitmax" onClick={onDepositMaxPressed}>Max </button></li>           
@@ -112,12 +115,16 @@ const onWithdrawMaxPressed = async () => {
             <button type="submit"  onClick={onDepositPressed} className="btn btn-primary">Deposit</button>
           </div>      
           </div>
-        </div>
-      </div>  
+        
+    
+     
+      </div> 
+     
+       </div>    
       <div class="col">
         <div class="card mb-6 rounded- shadow-sm">
           <div class="card-header py-3">
-            <h4 class="my-0 fw-normal">Withdraw Xava</h4>
+            <h4 class="my-0 fw-normal">Withdraw Babush</h4>
           </div>
           <div class="card-body">          
             <ul class="list-unstyled mt-3 mb-4">
@@ -132,8 +139,10 @@ const onWithdrawMaxPressed = async () => {
       </div>   
     </div>    
       </div>
-    <div className="container px-6 py-6" id="featured-3">
-    <h2 className="pb-2 border-bottom">XAVA Tokens Staked</h2>
+    <div className="container ">
+      <div className='babush1'>
+    <h2 className="pb-2">Babush Tokens Staked</h2>
+    </div>
     <div className="row g-4 py-5 row-cols-1 row-cols-lg-3">
       <div className="feature col">
         
