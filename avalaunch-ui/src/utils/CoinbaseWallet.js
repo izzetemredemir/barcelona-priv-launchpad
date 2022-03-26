@@ -1,4 +1,4 @@
-import { InjectedConnector } from "@web3-react/walletlink-connector";
+/*import { InjectedConnector } from "@web3-react/walletlink-connector";
 
 import { WalletLinkConnector } from "@web3-react/walletlink-connector";
 
@@ -35,3 +35,5 @@ const WalletConnect = new WalletConnectConnector({
  qrcode: true,
 
 });
+
+*/
