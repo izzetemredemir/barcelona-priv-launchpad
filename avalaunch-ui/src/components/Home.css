@@ -19,3 +19,29 @@
 .boba { 
     margin-left: 20rem;
 }
+
+.butoncuk-1 {
+    border: 1px solid;
+    background-color: rgb(0, 2, 60);
+    color: white;
+    font-size: 25px;
+    border-radius: 1rem;
+    width: 6rem;
+   
+}
+
+.butoncuk-2 {
+    border: 1px solid;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 2, 60);
+    font-size: 25px;
+    border-radius: 1rem;
+    width: 7rem;
+    height: 3rem;
+   
+}
+
+.butoncuk-2:hover {
+    background-color:rgb(0, 2, 60) ;
+    color:white;
+}

@@ -1,5 +1,5 @@
 .containert {
-  background-color: rgb(0, 2, 60)
+  background-color: rgb(0, 2, 60);
 
 }
 
@@ -39,9 +39,10 @@
     background-color: rgba(130, 140,190, 0.89);
     margin-right: 30px;
     color: white;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
-    max-height: 5rem;
+    height: 50px;
+    width: 11rem;
     padding: 5px;
     font-family:Arial, Helvetica, sans-serif;
 }
@@ -50,4 +51,20 @@
     background-color: white;
     color:rgb(1,5,68)
     
+}
+
+.info-head {
+  border: 1px solid white;
+  background-color: white;
+  color: rgb(0, 2, 60);
+  border-radius: 1rem 0 1rem 0;
+  margin-bottom: 20px;
+  width: 15rem;
+  text-align: center;
+  margin-left: 30px; 
+}
+
+.vertical-devider {
+  width: 0.5px;
+  height: 200px ;
 }
