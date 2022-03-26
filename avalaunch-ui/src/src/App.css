@@ -1,0 +1,4 @@
+.background {
+  background-image: url('./bg.jpeg') !important;
+  display: block;
+}
