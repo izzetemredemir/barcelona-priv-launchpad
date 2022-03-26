@@ -3,6 +3,9 @@ import React from 'react'
 import { useEffect, useState } from "react";
 import { connectWallet, getCurrentWalletConnected} from "../utils/wallet.js";
 import "./Header.css"
+import { Web3ReactProvider, useWeb3React } from '@web3-react/core'
+import "../utils/CoinbaseWallet";
+const { active, activate,  chainId, account, } = context;
 
 
 
@@ -64,6 +67,8 @@ const Header = (props) => {
 
         <div className="col-md-3 text-end">
           
+          
+  <button className="button1" variant="primary" onClick={() => { activate(CoinbaseWallet) } }>Connect Coinbase</button>
           <button className="button1" variant="primary" onClick={connectWalletPressed}>
           {walletAddress.length > 0 ? (
             "Connected: " +
@@ -73,6 +78,12 @@ const Header = (props) => {
           ) : (
             <span>Connect Wallet</span>
           )}</button>
+
+
+
+
+
+
           
         </div>
       </header>
