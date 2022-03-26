@@ -24,7 +24,7 @@
     grid-template-columns: auto;
     font-size: 20px;
     font-weight: 400;
-    gap: 8rem;
+    gap: 5rem;
 }
 
 .logo {
@@ -67,4 +67,11 @@
 .vertical-devider {
   width: 0.5px;
   height: 200px ;
+}
+
+.homme {
+  border-right: 1px solid ;
+  border-left: 1px solid;
+  width: 15rem;
+  text-align: center;
 }

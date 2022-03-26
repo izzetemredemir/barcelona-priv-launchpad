@@ -23,9 +23,9 @@
 
 
 .cardos {
-    margin-top: 18rem;
+    margin-top: 16rem;
     max-width: 40rem;
-    margin-left: 20rem;  
+    margin-left: -2rem; 
     position: absolute;  
     
 
@@ -89,6 +89,18 @@
 
 }
 
+.coin {
+    width: 2rem;
+    margin-left: 18rem;
+    margin-top: -6rem;
+}
+
+.coin2 {
+    width: 2rem;
+    margin-left: 15rem;
+    margin-top: -6rem;
+}
+
 .buttono {
     list-style: none;
     margin-left: 32rem;
@@ -100,13 +112,14 @@
     font-size: 18px;
     height: 12px;
     color: rgba(0, 2, 60, 0.699);
+    margin-left: -30rem;
 }
 
 .balance2 {
     font-size: 22px;
     color: rgba(0, 2, 60, 0.699);
     height: 15px;
-    margin-left: 4.5rem;
+    margin-left: -22.5rem;
     margin-top: -16px;
 } 
 

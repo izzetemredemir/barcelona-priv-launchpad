@@ -10,6 +10,7 @@ import {GetAvax_price,GetChainStatus,GetCurrentBlock} from "../utils/covalent";
 
 import SimpleDateTime  from 'react-simple-timestamp-to-date';
 
+import "./TokenInfo.css"
 
 const api_key = "ckey_fd0cd939c5f640b0ae183e94e92"
 const axios = require('axios');
@@ -88,15 +89,29 @@ useEffect(async () => {
     return (
       <main>
         <div className="Home"> 
+        
+        <img className= "bgy" src="https://i.imgur.com/K084mg3.png"></img>
 
      <div className='container'>
-      Hi {avax_price} {current_block} 
-
+      Avax price: {avax_price} 
+     <div className='infocuk'>
+     Current Block: {current_block} 
+       <div className='name'>
       {chain_status.name}
-      {chain_status.chain_id}
+      </div>
+      <div className='chainid'>
+      Chain Id: {chain_status.chain_id}
+      </div>
+      <div className='testnet'>
       {chain_status.is_testnet}
-      {chain_status.synced_block_height}
-      {chain_status.synced_blocked_signed_at}
+      </div>
+      <div className='block height'>
+      Block Height: {chain_status.synced_block_height}
+      </div>
+      <div className='synced'>
+      Blocked Signed at: {chain_status.synced_blocked_signed_at}
+      </div>
+      </div>
 
   </div>    
   </div>

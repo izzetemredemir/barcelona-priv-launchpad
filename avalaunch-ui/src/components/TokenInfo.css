@@ -1,0 +1,26 @@
+.container {
+    position: absolute;
+    margin-top: 30px;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgba(90, 98, 148, 0.418);
+    margin-left: 31rem;
+    border: 1px solid;
+    border-radius: 2rem 0 2rem 0;
+    width: 40rem;
+    color:white;
+}
+
+.bgy {
+    max-width: 100%; /* You must set a specified height */
+    margin-top: -30px;
+    background-position: center; /* Center the image */
+    position: absolute;
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: contain; 
+}
+
+.chainid {
+    text-align: center;
+
+}

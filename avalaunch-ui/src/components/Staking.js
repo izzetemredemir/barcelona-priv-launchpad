@@ -106,7 +106,7 @@ const onWithdrawMaxPressed = async () => {
         
           <div className='cardo-header-1'>
           
-            <h4 className='stake'>Stake BABUSH</h4>
+            <h4 className='stake'>Stake BABUSH</h4> <img className="coin2" src="https://i.imgur.com/nOcECOA.png"></img>
           </div>
           
           
@@ -131,7 +131,7 @@ const onWithdrawMaxPressed = async () => {
       <div class="col">
       <div className='cardo1'>
           <div className="cardo-header-2">
-            <h4 className="withdraw">Withdraw BABUSH</h4>
+            <h4 className="withdraw">Withdraw BABUSH</h4> <img className="coin" src="https://i.imgur.com/nOcECOA.png"></img>
           </div>
           <div class="card-body">    
           <div className='balance'>Balance:</div> <div className='balance2'>2500</div>      
