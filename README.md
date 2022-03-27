@@ -27,6 +27,9 @@ The starting capital of a team that will launch a token can be small. For a team
 
 ![LAUNCH Page](https://raw.githubusercontent.com/izzetemredemir/barcelona-priv-launchpad/master/images/launchPage.jpeg?token=GHSAT0AAAAAABSSUUU3SQ56GTBBUEHFRGCGYSJC4MQ)
 
+[Coinbase’s Terms and Conditions](https://docs.cloud.coinbase.com/wallet-sdk/docs/avalanche-2022)
+
+
 
 ![Covalent API Page](https://raw.githubusercontent.com/izzetemredemir/barcelona-priv-launchpad/master/images/Covalent.jpeg?token=GHSAT0AAAAAABSSUUU3L755EO4IPFCFIL7EYSJDBUA)
 
