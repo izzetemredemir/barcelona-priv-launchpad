@@ -4,6 +4,7 @@ Interface
 The interface of the launchpad stands out with its user friendly display. "Home", "Allocation Staking", and the "Launch" tabs are on the middle top of the page where the user's attention is driven towards first when they enter the website.
 
 - Home tab includes introductory data on the project and also has the "Sales" and "Staking" buttons.
+![Homepage](https://raw.githubusercontent.com/izzetemredemir/barcelona-priv-launchpad/master/images/homepage.jpeg?token=GHSAT0AAAAAABSSUUU2CBTFUVUBMT2WBO2MYSJC22Q)
 
 - Allocation Staking tab offers users an easy interaction with the cards "Stake BABUSH" and "Withdraw BABUSH". All the relative info such as "Pool Info", "Staking Info" and "Reward Info" are included in the bottom of the page.
 
