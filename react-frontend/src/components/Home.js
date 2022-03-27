@@ -22,6 +22,7 @@ export default class Home extends Component {
                
                <button type="button" className="butoncuk-1">Sales</button>
                <button type="button" className="butoncuk-2">Staking</button>
+              <a href="https://docs.cloud.coinbase.com/wallet-sdk/docs/avalanche-2022">Coinbase Wallet conditions</a>
             </div>
             </div>
             </div>
