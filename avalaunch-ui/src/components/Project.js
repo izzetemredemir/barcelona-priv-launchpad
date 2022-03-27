@@ -6,6 +6,7 @@ import { useSearchParams } from "react-router-dom";
 import {getCurrentRoundd,getNumberOfRegisteredUsers,getNumberOfParticipants,isParticipated,getRegistration ,getSale,registerForSale,participate,withdrawEarnings} from "../utils/AvalaunchSale";
 import SimpleDateTime  from 'react-simple-timestamp-to-date';
 import {getCurrentWalletConnected} from "../utils/wallet";
+
 const Project = (props) => {
 
 
@@ -192,8 +193,10 @@ const Project = (props) => {
     return (
       <main>
       <div className="Home"> 
+      <img className="allo" src="https://i.imgur.com/nborIOR.png"></img>
       
    <div className='container'>
+    <div className='cardos'>
     <div className="row row-cols-1 row-cols-md-3 mb-3 text-center">
     <div className="col">
       <div className="card mb-6 rounded- shadow-sm">
@@ -217,7 +220,7 @@ const Project = (props) => {
           <button type="submit" onClick={onRegisterPressed}  className="btn btn-primary">Register</button>
         </div>      
         </div>
-        
+        </div>  
       </div>
       
     </div>  
@@ -272,11 +275,13 @@ const Project = (props) => {
       <div className="feature-icon bg-primary bg-gradient">
 
       </div>
+      <div className='sale-info'>
       <h2>Sale Info</h2>   
       <p>Current Round: {currentRound} </p>
       <p>numberOfRegisteredUsers: {numberOfRegisteredUsers} </p>
       <p>numberOfParticipants: {numberOfParticipants}</p>
       <p>Contract: {id}</p>
+      </div>
 
      </div>
      <div className="feature col">
@@ -310,7 +315,7 @@ const Project = (props) => {
       <p>tokenPriceInAVAX:{sale[6]}</p>
       <p>amountOfTokensToSell:{sale[7]}</p>
       <p>totalTokensSold:{sale[8]}</p>
-      <p>totalAVAXRaised:{sale[9]}</p>
+      <p>totalBABUSHRaised:{sale[9]}</p>
       <p>saleEnd :<SimpleDateTime dateSeparator="-" format="MYD" timeSeparator=":" meridians="1">{sale[10]}</SimpleDateTime></p>
         <p>tokensUnlockTime :<SimpleDateTime dateSeparator="-" format="MYD" timeSeparator=":" meridians="1">{sale[11]}</SimpleDateTime></p>
 
