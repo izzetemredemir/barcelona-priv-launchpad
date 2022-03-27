@@ -44,5 +44,5 @@ The starting capital of a team that will launch a token can be small. For a team
 
 
 
-
+[Coinbase’s Terms and Conditions](https://docs.cloud.coinbase.com/wallet-sdk/docs/avalanche-2022)
 
