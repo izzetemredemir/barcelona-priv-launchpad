@@ -1,0 +1,1657 @@
+{
+  "version": "3.2",
+  "log": [
+    {
+      "ECDSA": {
+        "src": "@openzeppelin/contracts/cryptography/ECDSA.sol:11",
+        "version": {
+          "withMetadata": "ef3eae386184450b3544c0062d58c1be52c57b6817218eae7f26fb51fad028c6",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "SafeMath": {
+        "src": "@openzeppelin/contracts/math/SafeMath.sol:18",
+        "version": {
+          "withMetadata": "b17a273ac5e79a208abf8a55ba14cf0bd831fabee6984953ede7111da72b0a00",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC20": {
+        "src": "@openzeppelin/contracts/token/ERC20/IERC20.sol:8",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "transferFrom(address,address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "SafeERC20": {
+        "src": "@openzeppelin/contracts/token/ERC20/SafeERC20.sol:18",
+        "version": {
+          "withMetadata": "f69053fa90b75818b0f620823f7d28c0d2b4be91c28d9de84deb646ad1a11dfc",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [
+          "SafeMath",
+          "Address"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "Address": {
+        "src": "@openzeppelin/contracts/utils/Address.sol:8",
+        "version": {
+          "withMetadata": "781a0a991ce356b770167e2ebeae7b2933c70f85a744dfb41da5a1920c2031d1",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:167"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IAdmin": {
+        "src": "contracts/interfaces/IAdmin.sol:4",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "isAdmin(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IAllocationStaking": {
+        "src": "contracts/interfaces/IAllocationStaking.sol:4",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "redistributeXava(uint256,address,uint256)",
+          "deposited(uint256,address)",
+          "setTokensUnlockTime(uint256,address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ISalesFactory": {
+        "src": "contracts/interfaces/ISalesFactory.sol:4",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "setSaleOwnerAndToken(address,address)",
+          "isSaleCreatedThroughFactory(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "AvalaunchSale": {
+        "src": "contracts/sales/AvalaunchSale.sol:11",
+        "version": {
+          "withMetadata": "82255815ecc0ae66336a74a8fe7077ec31a5a01f0f188ae73a53dc056342fd42",
+          "withoutMetadata": "b62043f9ac3d74e6eeb1718d8c7b985b17e4826cf7d97042fa6e568d27c76016",
+          "linkedWithoutMetadata": "b62043f9ac3d74e6eeb1718d8c7b985b17e4826cf7d97042fa6e568d27c76016"
+        },
+        "inherit": [],
+        "libraries": [
+          "ECDSA",
+          "SafeMath",
+          "SafeERC20"
+        ],
+        "methods": [
+          "(address,address)",
+          "setVestingParams(uint256[],uint256[],uint256)",
+          "shiftVestingUnlockingTimes(uint256)",
+          "setSaleParams(address,address,uint256,uint256,uint256,uint256,uint256,uint256,uint256)",
+          "setSaleToken(address)",
+          "setRegistrationTime(uint256,uint256)",
+          "setRounds(uint256[],uint256[])",
+          "registerForSale(uint256)",
+          "updateTokenPriceInAVAX(uint256)",
+          "postponeSale(uint256)",
+          "extendRegistrationPeriod(uint256)",
+          "setCapPerRound(uint256[],uint256[])",
+          "depositTokens()",
+          "participate(uint256,uint256,uint256)",
+          "withdrawTokens(uint256)",
+          "withdrawMultiplePortions(uint256[])",
+          "withdrawEarningsAndLeftover()",
+          "withdrawEarnings()",
+          "withdrawLeftover()",
+          "withdrawRegistrationFees()",
+          "withdrawUnusedFunds()",
+          "()",
+          "getCurrentRound()",
+          "getParticipation(address)",
+          "getNumberOfRegisteredUsers()",
+          "getVestingInfo()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "AvalaunchSale",
+            "src": "contracts/sales/AvalaunchSale.sol:144"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "AvalaunchSale",
+              "label": "allocationStakingContract",
+              "type": "t_contract(IAllocationStaking)1097",
+              "src": "contracts/sales/AvalaunchSale.sol:17"
+            },
+            {
+              "contract": "AvalaunchSale",
+              "label": "factory",
+              "type": "t_contract(ISalesFactory)1114",
+              "src": "contracts/sales/AvalaunchSale.sol:19"
+            },
+            {
+              "contract": "AvalaunchSale",
+              "label": "admin",
+              "type": "t_contract(IAdmin)1067",
+              "src": "contracts/sales/AvalaunchSale.sol:21"
+            },
+            {
+              "contract": "AvalaunchSale",
+              "label": "sale",
+              "type": "t_struct(Sale)1162_storage",
+              "src": "contracts/sales/AvalaunchSale.sol:72"
+            },
+            {
+              "contract": "AvalaunchSale",
+              "label": "registration",
+              "type": "t_struct(Registration)1186_storage",
+              "src": "contracts/sales/AvalaunchSale.sol:74"
+            },
+            {
+              "contract": "AvalaunchSale",
+              "label": "numberOfParticipants",
+              "type": "t_uint256",
+              "src": "contracts/sales/AvalaunchSale.sol:76"
+            },
+            {
+              "contract": "AvalaunchSale",
+              "label": "roundIds",
+              "type": "t_array(t_uint256)dyn_storage",
+              "src": "contracts/sales/AvalaunchSale.sol:78"
+            },
+            {
+              "contract": "AvalaunchSale",
+              "label": "roundIdToRound",
+              "type": "t_mapping(t_uint256,t_struct(Round)1179_storage)",
+              "src": "contracts/sales/AvalaunchSale.sol:80"
+            },
+            {
+              "contract": "AvalaunchSale",
+              "label": "userToParticipation",
+              "type": "t_mapping(t_address,t_struct(Participation)1174_storage)",
+              "src": "contracts/sales/AvalaunchSale.sol:82"
+            },
+            {
+              "contract": "AvalaunchSale",
+              "label": "addressToRoundRegisteredFor",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/sales/AvalaunchSale.sol:84"
+            },
+            {
+              "contract": "AvalaunchSale",
+              "label": "isParticipated",
+              "type": "t_mapping(t_address,t_bool)",
+              "src": "contracts/sales/AvalaunchSale.sol:86"
+            },
+            {
+              "contract": "AvalaunchSale",
+              "label": "vestingPortionsUnlockTime",
+              "type": "t_array(t_uint256)dyn_storage",
+              "src": "contracts/sales/AvalaunchSale.sol:90"
+            },
+            {
+              "contract": "AvalaunchSale",
+              "label": "vestingPercentPerPortion",
+              "type": "t_array(t_uint256)dyn_storage",
+              "src": "contracts/sales/AvalaunchSale.sol:92"
+            },
+            {
+              "contract": "AvalaunchSale",
+              "label": "portionVestingPrecision",
+              "type": "t_uint256",
+              "src": "contracts/sales/AvalaunchSale.sol:94"
+            },
+            {
+              "contract": "AvalaunchSale",
+              "label": "stakingRoundId",
+              "type": "t_uint256",
+              "src": "contracts/sales/AvalaunchSale.sol:96"
+            },
+            {
+              "contract": "AvalaunchSale",
+              "label": "maxVestingTimeShift",
+              "type": "t_uint256",
+              "src": "contracts/sales/AvalaunchSale.sol:98"
+            },
+            {
+              "contract": "AvalaunchSale",
+              "label": "registrationDepositAVAX",
+              "type": "t_uint256",
+              "src": "contracts/sales/AvalaunchSale.sol:100"
+            },
+            {
+              "contract": "AvalaunchSale",
+              "label": "registrationFees",
+              "type": "t_uint256",
+              "src": "contracts/sales/AvalaunchSale.sol:102"
+            }
+          ],
+          "types": {
+            "t_contract(IAllocationStaking)1097": {
+              "label": "contract IAllocationStaking"
+            },
+            "t_contract(ISalesFactory)1114": {
+              "label": "contract ISalesFactory"
+            },
+            "t_contract(IAdmin)1067": {
+              "label": "contract IAdmin"
+            },
+            "t_struct(Sale)1162_storage": {
+              "label": "struct AvalaunchSale.Sale",
+              "members": [
+                {
+                  "label": "token",
+                  "type": "t_contract(IERC20)548"
+                },
+                {
+                  "label": "isCreated",
+                  "type": "t_bool"
+                },
+                {
+                  "label": "earningsWithdrawn",
+                  "type": "t_bool"
+                },
+                {
+                  "label": "leftoverWithdrawn",
+                  "type": "t_bool"
+                },
+                {
+                  "label": "tokensDeposited",
+                  "type": "t_bool"
+                },
+                {
+                  "label": "saleOwner",
+                  "type": "t_address"
+                },
+                {
+                  "label": "tokenPriceInAVAX",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "amountOfTokensToSell",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "totalTokensSold",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "totalAVAXRaised",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "saleEnd",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "tokensUnlockTime",
+                  "type": "t_uint256"
+                }
+              ]
+            },
+            "t_contract(IERC20)548": {
+              "label": "contract IERC20"
+            },
+            "t_bool": {
+              "label": "bool"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_struct(Registration)1186_storage": {
+              "label": "struct AvalaunchSale.Registration",
+              "members": [
+                {
+                  "label": "registrationTimeStarts",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "registrationTimeEnds",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "numberOfRegistrants",
+                  "type": "t_uint256"
+                }
+              ]
+            },
+            "t_array(t_uint256)dyn_storage": {
+              "label": "uint256[]"
+            },
+            "t_mapping(t_uint256,t_struct(Round)1179_storage)": {
+              "label": "mapping(uint256 => struct AvalaunchSale.Round)"
+            },
+            "t_struct(Round)1179_storage": {
+              "label": "struct AvalaunchSale.Round",
+              "members": [
+                {
+                  "label": "startTime",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "maxParticipation",
+                  "type": "t_uint256"
+                }
+              ]
+            },
+            "t_mapping(t_address,t_struct(Participation)1174_storage)": {
+              "label": "mapping(address => struct AvalaunchSale.Participation)"
+            },
+            "t_struct(Participation)1174_storage": {
+              "label": "struct AvalaunchSale.Participation",
+              "members": [
+                {
+                  "label": "amountBought",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "amountAVAXPaid",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "timeParticipated",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "roundId",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "isPortionWithdrawn",
+                  "type": "t_array(t_bool)dyn_storage"
+                }
+              ]
+            },
+            "t_array(t_bool)dyn_storage": {
+              "label": "bool[]"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)"
+            },
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "SalesFactory": {
+        "src": "contracts/sales/SalesFactory.sol:8",
+        "version": {
+          "withMetadata": "a1e5c5c419b20b6d6036392ab92187b9a3c938736ad3026d274f334a54fbe501",
+          "withoutMetadata": "20fe9fb9e736d6307a4148ae16422d68087f5496b7700dce0d12017212d536b9",
+          "linkedWithoutMetadata": "20fe9fb9e736d6307a4148ae16422d68087f5496b7700dce0d12017212d536b9"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "(address,address)",
+          "setAllocationStaking(address)",
+          "deploySale()",
+          "getNumberOfSalesDeployed()",
+          "getLastDeployedSale()",
+          "getAllSales(uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "SalesFactory",
+            "src": "contracts/sales/SalesFactory.sol:30"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "SalesFactory",
+              "label": "admin",
+              "type": "t_contract(IAdmin)1067",
+              "src": "contracts/sales/SalesFactory.sol:10"
+            },
+            {
+              "contract": "SalesFactory",
+              "label": "allocationStaking",
+              "type": "t_address",
+              "src": "contracts/sales/SalesFactory.sol:11"
+            },
+            {
+              "contract": "SalesFactory",
+              "label": "isSaleCreatedThroughFactory",
+              "type": "t_mapping(t_address,t_bool)",
+              "src": "contracts/sales/SalesFactory.sol:13"
+            },
+            {
+              "contract": "SalesFactory",
+              "label": "saleOwnerToSale",
+              "type": "t_mapping(t_address,t_address)",
+              "src": "contracts/sales/SalesFactory.sol:15"
+            },
+            {
+              "contract": "SalesFactory",
+              "label": "tokenToSale",
+              "type": "t_mapping(t_address,t_address)",
+              "src": "contracts/sales/SalesFactory.sol:16"
+            },
+            {
+              "contract": "SalesFactory",
+              "label": "allSales",
+              "type": "t_array(t_address)dyn_storage",
+              "src": "contracts/sales/SalesFactory.sol:19"
+            }
+          ],
+          "types": {
+            "t_contract(IAdmin)1067": {
+              "label": "contract IAdmin"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)"
+            },
+            "t_bool": {
+              "label": "bool"
+            },
+            "t_mapping(t_address,t_address)": {
+              "label": "mapping(address => address)"
+            },
+            "t_array(t_address)dyn_storage": {
+              "label": "address[]"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "IERC20": {
+        "src": "contracts/IERC20.sol:8",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "transferFrom(address,address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "XavaToken": {
+        "src": "contracts/XavaToken.sol:9",
+        "version": {
+          "withMetadata": "8a6447dd2f53e324eb148acf7fc375cb4fe22a6fa7158869805f02534c3d65ab",
+          "withoutMetadata": "3875f2b9f8329439faf49991c0c6d0f914f42c348c686688996814e668cc69cf",
+          "linkedWithoutMetadata": "3875f2b9f8329439faf49991c0c6d0f914f42c348c686688996814e668cc69cf"
+        },
+        "inherit": [
+          "IERC20",
+          "Context"
+        ],
+        "libraries": [
+          "SafeMath"
+        ],
+        "methods": [
+          "(string,string,uint256,uint8)",
+          "transfer(address,uint256)",
+          "approve(address,uint256)",
+          "burn(uint256)",
+          "transferFrom(address,address,uint256)",
+          "decreaseAllowance(address,uint256)",
+          "name()",
+          "allowance(address,address)",
+          "symbol()",
+          "decimals()",
+          "totalSupply()",
+          "balanceOf(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "XavaToken",
+            "src": "contracts/XavaToken.sol:22"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "XavaToken",
+              "label": "_balances",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/XavaToken.sol:12"
+            },
+            {
+              "contract": "XavaToken",
+              "label": "_allowances",
+              "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+              "src": "contracts/XavaToken.sol:14"
+            },
+            {
+              "contract": "XavaToken",
+              "label": "_totalSupply",
+              "type": "t_uint256",
+              "src": "contracts/XavaToken.sol:16"
+            },
+            {
+              "contract": "XavaToken",
+              "label": "_name",
+              "type": "t_string_storage",
+              "src": "contracts/XavaToken.sol:18"
+            },
+            {
+              "contract": "XavaToken",
+              "label": "_symbol",
+              "type": "t_string_storage",
+              "src": "contracts/XavaToken.sol:19"
+            },
+            {
+              "contract": "XavaToken",
+              "label": "_decimals",
+              "type": "t_uint8",
+              "src": "contracts/XavaToken.sol:20"
+            }
+          ],
+          "types": {
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+              "label": "mapping(address => mapping(address => uint256))"
+            },
+            "t_string_storage": {
+              "label": "string"
+            },
+            "t_uint8": {
+              "label": "uint8"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "SafeMath": {
+        "src": "contracts/math/SafeMath.sol:18",
+        "version": {
+          "withMetadata": "092106deeca027bc998c19f6a7818a628f67104aa486f62944620bca06e02047",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "Context": {
+        "src": "contracts/utils/Context.sol:15",
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "OwnableUpgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:19",
+        "inherit": [
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [
+          "owner()",
+          "renounceOwnership()",
+          "transferOwnership(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:20"
+            },
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "__gap",
+              "type": "t_array(t_uint256)49_storage",
+              "src": "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:74"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address"
+            },
+            "t_array(t_uint256)49_storage": {
+              "label": "uint256[49]"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "Initializable": {
+        "src": "@openzeppelin/contracts-upgradeable/proxy/Initializable.sol:20",
+        "inherit": [],
+        "libraries": [
+          "AddressUpgradeable"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/Initializable.sol:25"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/Initializable.sol:30"
+            }
+          ],
+          "types": {
+            "t_bool": {
+              "label": "bool"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "AddressUpgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol:8",
+        "version": {
+          "withMetadata": "baf9a92fa6a458121c41fa3fc899110a3d467c3ecd8b47dce92c4afe9fd5c49d",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ContextUpgradeable": {
+        "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:16",
+        "inherit": [
+          "Initializable"
+        ],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "ContextUpgradeable",
+              "label": "__gap",
+              "type": "t_array(t_uint256)50_storage",
+              "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:31"
+            }
+          ],
+          "types": {
+            "t_array(t_uint256)50_storage": {
+              "label": "uint256[50]"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "ECDSA": {
+        "src": "@openzeppelin/contracts/cryptography/ECDSA.sol:11",
+        "version": {
+          "withMetadata": "ef3eae386184450b3544c0062d58c1be52c57b6817218eae7f26fb51fad028c6",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "SafeMath": {
+        "src": "@openzeppelin/contracts/math/SafeMath.sol:18",
+        "version": {
+          "withMetadata": "b17a273ac5e79a208abf8a55ba14cf0bd831fabee6984953ede7111da72b0a00",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IERC20": {
+        "src": "@openzeppelin/contracts/token/ERC20/IERC20.sol:8",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "totalSupply()",
+          "balanceOf(address)",
+          "transfer(address,uint256)",
+          "allowance(address,address)",
+          "approve(address,uint256)",
+          "transferFrom(address,address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "SafeERC20": {
+        "src": "@openzeppelin/contracts/token/ERC20/SafeERC20.sol:18",
+        "version": {
+          "withMetadata": "f69053fa90b75818b0f620823f7d28c0d2b4be91c28d9de84deb646ad1a11dfc",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [
+          "SafeMath",
+          "Address"
+        ],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "Address": {
+        "src": "@openzeppelin/contracts/utils/Address.sol:8",
+        "version": {
+          "withMetadata": "781a0a991ce356b770167e2ebeae7b2933c70f85a744dfb41da5a1920c2031d1",
+          "withoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8",
+          "linkedWithoutMetadata": "aaa148c474cd10e1a6cd0a52c0b55f1aa9b7bb7b42d7f1cb5acaea4f42f04bc8"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "delegatecall",
+            "src": "@openzeppelin/contracts/utils/Address.sol:167"
+          }
+        ],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "AllocationStaking": {
+        "src": "contracts/AllocationStaking.sol:11",
+        "version": {
+          "withMetadata": "a6ea4263f6939606bf0a13e2c1960cedaebfe66082c8966edbc6a0651259c684",
+          "withoutMetadata": "c81305647fcb851aa2d59edf237cb3365691581a5ce1e7752e454eea943995d7",
+          "linkedWithoutMetadata": "c81305647fcb851aa2d59edf237cb3365691581a5ce1e7752e454eea943995d7"
+        },
+        "inherit": [
+          "OwnableUpgradeable",
+          "ContextUpgradeable",
+          "Initializable"
+        ],
+        "libraries": [
+          "SafeMath",
+          "SafeERC20"
+        ],
+        "methods": [
+          "initialize(address,uint256,uint256,address,uint256,uint256)",
+          "setSalesFactory(address)",
+          "poolLength()",
+          "fund(uint256)",
+          "add(uint256,address,bool)",
+          "setDepositFee(uint256,uint256)",
+          "set(uint256,uint256,bool)",
+          "deposited(uint256,address)",
+          "pending(uint256,address)",
+          "totalPending()",
+          "massUpdatePools()",
+          "setTokensUnlockTime(uint256,address,uint256)",
+          "redistributeXava(uint256,address,uint256)",
+          "updatePool(uint256)",
+          "deposit(uint256,uint256)",
+          "withdraw(uint256,uint256)",
+          "compound(uint256)",
+          "emergencyWithdraw(uint256)",
+          "getWithdrawFee(address,uint256,uint256)",
+          "getPendingAndDepositedForUsers(address[],uint256)",
+          "setPostSaleWithdrawPenaltyPercentAndLength(uint256,uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "contract": "AllocationStaking",
+              "label": "erc20",
+              "type": "t_contract(IERC20)1034",
+              "src": "contracts/AllocationStaking.sol:34"
+            },
+            {
+              "contract": "AllocationStaking",
+              "label": "paidOut",
+              "type": "t_uint256",
+              "src": "contracts/AllocationStaking.sol:36"
+            },
+            {
+              "contract": "AllocationStaking",
+              "label": "rewardPerSecond",
+              "type": "t_uint256",
+              "src": "contracts/AllocationStaking.sol:38"
+            },
+            {
+              "contract": "AllocationStaking",
+              "label": "totalRewards",
+              "type": "t_uint256",
+              "src": "contracts/AllocationStaking.sol:40"
+            },
+            {
+              "contract": "AllocationStaking",
+              "label": "depositFeePrecision",
+              "type": "t_uint256",
+              "src": "contracts/AllocationStaking.sol:42"
+            },
+            {
+              "contract": "AllocationStaking",
+              "label": "depositFeePercent",
+              "type": "t_uint256",
+              "src": "contracts/AllocationStaking.sol:44"
+            },
+            {
+              "contract": "AllocationStaking",
+              "label": "totalXavaRedistributed",
+              "type": "t_uint256",
+              "src": "contracts/AllocationStaking.sol:46"
+            },
+            {
+              "contract": "AllocationStaking",
+              "label": "salesFactory",
+              "type": "t_contract(ISalesFactory)3290",
+              "src": "contracts/AllocationStaking.sol:48"
+            },
+            {
+              "contract": "AllocationStaking",
+              "label": "poolInfo",
+              "type": "t_array(t_struct(PoolInfo)1579_storage)dyn_storage",
+              "src": "contracts/AllocationStaking.sol:50"
+            },
+            {
+              "contract": "AllocationStaking",
+              "label": "userInfo",
+              "type": "t_mapping(t_uint256,t_mapping(t_address,t_struct(UserInfo)1568_storage))",
+              "src": "contracts/AllocationStaking.sol:52"
+            },
+            {
+              "contract": "AllocationStaking",
+              "label": "totalAllocPoint",
+              "type": "t_uint256",
+              "src": "contracts/AllocationStaking.sol:54"
+            },
+            {
+              "contract": "AllocationStaking",
+              "label": "startTimestamp",
+              "type": "t_uint256",
+              "src": "contracts/AllocationStaking.sol:56"
+            },
+            {
+              "contract": "AllocationStaking",
+              "label": "endTimestamp",
+              "type": "t_uint256",
+              "src": "contracts/AllocationStaking.sol:58"
+            },
+            {
+              "contract": "AllocationStaking",
+              "label": "totalBurnedFromUser",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/AllocationStaking.sol:60"
+            },
+            {
+              "contract": "AllocationStaking",
+              "label": "postSaleWithdrawPenaltyLength",
+              "type": "t_uint256",
+              "src": "contracts/AllocationStaking.sol:62"
+            },
+            {
+              "contract": "AllocationStaking",
+              "label": "postSaleWithdrawPenaltyPercent",
+              "type": "t_uint256",
+              "src": "contracts/AllocationStaking.sol:64"
+            },
+            {
+              "contract": "AllocationStaking",
+              "label": "postSaleWithdrawPenaltyPrecision",
+              "type": "t_uint256",
+              "src": "contracts/AllocationStaking.sol:66"
+            }
+          ],
+          "types": {
+            "t_contract(IERC20)1034": {
+              "label": "contract IERC20"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_contract(ISalesFactory)3290": {
+              "label": "contract ISalesFactory"
+            },
+            "t_array(t_struct(PoolInfo)1579_storage)dyn_storage": {
+              "label": "struct AllocationStaking.PoolInfo[]"
+            },
+            "t_struct(PoolInfo)1579_storage": {
+              "label": "struct AllocationStaking.PoolInfo",
+              "members": [
+                {
+                  "label": "lpToken",
+                  "type": "t_contract(IERC20)1034"
+                },
+                {
+                  "label": "allocPoint",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "lastRewardTimestamp",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "accERC20PerShare",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "totalDeposits",
+                  "type": "t_uint256"
+                }
+              ]
+            },
+            "t_mapping(t_uint256,t_mapping(t_address,t_struct(UserInfo)1568_storage))": {
+              "label": "mapping(uint256 => mapping(address => struct AllocationStaking.UserInfo))"
+            },
+            "t_mapping(t_address,t_struct(UserInfo)1568_storage)": {
+              "label": "mapping(address => struct AllocationStaking.UserInfo)"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_struct(UserInfo)1568_storage": {
+              "label": "struct AllocationStaking.UserInfo",
+              "members": [
+                {
+                  "label": "amount",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "rewardDebt",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "tokensUnlockTime",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "salesRegistered",
+                  "type": "t_array(t_address)dyn_storage"
+                }
+              ]
+            },
+            "t_array(t_address)dyn_storage": {
+              "label": "address[]"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "IAdmin": {
+        "src": "contracts/interfaces/IAdmin.sol:4",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "isAdmin(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "IAllocationStaking": {
+        "src": "contracts/interfaces/IAllocationStaking.sol:4",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "redistributeXava(uint256,address,uint256)",
+          "deposited(uint256,address)",
+          "setTokensUnlockTime(uint256,address,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "ISalesFactory": {
+        "src": "contracts/interfaces/ISalesFactory.sol:4",
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "setSaleOwnerAndToken(address,address)",
+          "isSaleCreatedThroughFactory(address)"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [],
+          "types": {},
+          "layoutVersion": "1.1"
+        }
+      },
+      "AvalaunchSale": {
+        "src": "contracts/sales/AvalaunchSale.sol:11",
+        "version": {
+          "withMetadata": "82255815ecc0ae66336a74a8fe7077ec31a5a01f0f188ae73a53dc056342fd42",
+          "withoutMetadata": "b62043f9ac3d74e6eeb1718d8c7b985b17e4826cf7d97042fa6e568d27c76016",
+          "linkedWithoutMetadata": "b62043f9ac3d74e6eeb1718d8c7b985b17e4826cf7d97042fa6e568d27c76016"
+        },
+        "inherit": [],
+        "libraries": [
+          "ECDSA",
+          "SafeMath",
+          "SafeERC20"
+        ],
+        "methods": [
+          "(address,address)",
+          "setVestingParams(uint256[],uint256[],uint256)",
+          "shiftVestingUnlockingTimes(uint256)",
+          "setSaleParams(address,address,uint256,uint256,uint256,uint256,uint256,uint256,uint256)",
+          "setSaleToken(address)",
+          "setRegistrationTime(uint256,uint256)",
+          "setRounds(uint256[],uint256[])",
+          "registerForSale(uint256)",
+          "updateTokenPriceInAVAX(uint256)",
+          "postponeSale(uint256)",
+          "extendRegistrationPeriod(uint256)",
+          "setCapPerRound(uint256[],uint256[])",
+          "depositTokens()",
+          "participate(uint256,uint256,uint256)",
+          "withdrawTokens(uint256)",
+          "withdrawMultiplePortions(uint256[])",
+          "withdrawEarningsAndLeftover()",
+          "withdrawEarnings()",
+          "withdrawLeftover()",
+          "withdrawRegistrationFees()",
+          "withdrawUnusedFunds()",
+          "()",
+          "getCurrentRound()",
+          "getParticipation(address)",
+          "getNumberOfRegisteredUsers()",
+          "getVestingInfo()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "AvalaunchSale",
+            "src": "contracts/sales/AvalaunchSale.sol:144"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "AvalaunchSale",
+              "label": "allocationStakingContract",
+              "type": "t_contract(IAllocationStaking)3273",
+              "src": "contracts/sales/AvalaunchSale.sol:17"
+            },
+            {
+              "contract": "AvalaunchSale",
+              "label": "factory",
+              "type": "t_contract(ISalesFactory)3290",
+              "src": "contracts/sales/AvalaunchSale.sol:19"
+            },
+            {
+              "contract": "AvalaunchSale",
+              "label": "admin",
+              "type": "t_contract(IAdmin)3243",
+              "src": "contracts/sales/AvalaunchSale.sol:21"
+            },
+            {
+              "contract": "AvalaunchSale",
+              "label": "sale",
+              "type": "t_struct(Sale)3338_storage",
+              "src": "contracts/sales/AvalaunchSale.sol:72"
+            },
+            {
+              "contract": "AvalaunchSale",
+              "label": "registration",
+              "type": "t_struct(Registration)3362_storage",
+              "src": "contracts/sales/AvalaunchSale.sol:74"
+            },
+            {
+              "contract": "AvalaunchSale",
+              "label": "numberOfParticipants",
+              "type": "t_uint256",
+              "src": "contracts/sales/AvalaunchSale.sol:76"
+            },
+            {
+              "contract": "AvalaunchSale",
+              "label": "roundIds",
+              "type": "t_array(t_uint256)dyn_storage",
+              "src": "contracts/sales/AvalaunchSale.sol:78"
+            },
+            {
+              "contract": "AvalaunchSale",
+              "label": "roundIdToRound",
+              "type": "t_mapping(t_uint256,t_struct(Round)3355_storage)",
+              "src": "contracts/sales/AvalaunchSale.sol:80"
+            },
+            {
+              "contract": "AvalaunchSale",
+              "label": "userToParticipation",
+              "type": "t_mapping(t_address,t_struct(Participation)3350_storage)",
+              "src": "contracts/sales/AvalaunchSale.sol:82"
+            },
+            {
+              "contract": "AvalaunchSale",
+              "label": "addressToRoundRegisteredFor",
+              "type": "t_mapping(t_address,t_uint256)",
+              "src": "contracts/sales/AvalaunchSale.sol:84"
+            },
+            {
+              "contract": "AvalaunchSale",
+              "label": "isParticipated",
+              "type": "t_mapping(t_address,t_bool)",
+              "src": "contracts/sales/AvalaunchSale.sol:86"
+            },
+            {
+              "contract": "AvalaunchSale",
+              "label": "vestingPortionsUnlockTime",
+              "type": "t_array(t_uint256)dyn_storage",
+              "src": "contracts/sales/AvalaunchSale.sol:90"
+            },
+            {
+              "contract": "AvalaunchSale",
+              "label": "vestingPercentPerPortion",
+              "type": "t_array(t_uint256)dyn_storage",
+              "src": "contracts/sales/AvalaunchSale.sol:92"
+            },
+            {
+              "contract": "AvalaunchSale",
+              "label": "portionVestingPrecision",
+              "type": "t_uint256",
+              "src": "contracts/sales/AvalaunchSale.sol:94"
+            },
+            {
+              "contract": "AvalaunchSale",
+              "label": "stakingRoundId",
+              "type": "t_uint256",
+              "src": "contracts/sales/AvalaunchSale.sol:96"
+            },
+            {
+              "contract": "AvalaunchSale",
+              "label": "maxVestingTimeShift",
+              "type": "t_uint256",
+              "src": "contracts/sales/AvalaunchSale.sol:98"
+            },
+            {
+              "contract": "AvalaunchSale",
+              "label": "registrationDepositAVAX",
+              "type": "t_uint256",
+              "src": "contracts/sales/AvalaunchSale.sol:100"
+            },
+            {
+              "contract": "AvalaunchSale",
+              "label": "registrationFees",
+              "type": "t_uint256",
+              "src": "contracts/sales/AvalaunchSale.sol:102"
+            }
+          ],
+          "types": {
+            "t_contract(IAllocationStaking)3273": {
+              "label": "contract IAllocationStaking"
+            },
+            "t_contract(ISalesFactory)3290": {
+              "label": "contract ISalesFactory"
+            },
+            "t_contract(IAdmin)3243": {
+              "label": "contract IAdmin"
+            },
+            "t_struct(Sale)3338_storage": {
+              "label": "struct AvalaunchSale.Sale",
+              "members": [
+                {
+                  "label": "token",
+                  "type": "t_contract(IERC20)1034"
+                },
+                {
+                  "label": "isCreated",
+                  "type": "t_bool"
+                },
+                {
+                  "label": "earningsWithdrawn",
+                  "type": "t_bool"
+                },
+                {
+                  "label": "leftoverWithdrawn",
+                  "type": "t_bool"
+                },
+                {
+                  "label": "tokensDeposited",
+                  "type": "t_bool"
+                },
+                {
+                  "label": "saleOwner",
+                  "type": "t_address"
+                },
+                {
+                  "label": "tokenPriceInAVAX",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "amountOfTokensToSell",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "totalTokensSold",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "totalAVAXRaised",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "saleEnd",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "tokensUnlockTime",
+                  "type": "t_uint256"
+                }
+              ]
+            },
+            "t_contract(IERC20)1034": {
+              "label": "contract IERC20"
+            },
+            "t_bool": {
+              "label": "bool"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_uint256": {
+              "label": "uint256"
+            },
+            "t_struct(Registration)3362_storage": {
+              "label": "struct AvalaunchSale.Registration",
+              "members": [
+                {
+                  "label": "registrationTimeStarts",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "registrationTimeEnds",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "numberOfRegistrants",
+                  "type": "t_uint256"
+                }
+              ]
+            },
+            "t_array(t_uint256)dyn_storage": {
+              "label": "uint256[]"
+            },
+            "t_mapping(t_uint256,t_struct(Round)3355_storage)": {
+              "label": "mapping(uint256 => struct AvalaunchSale.Round)"
+            },
+            "t_struct(Round)3355_storage": {
+              "label": "struct AvalaunchSale.Round",
+              "members": [
+                {
+                  "label": "startTime",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "maxParticipation",
+                  "type": "t_uint256"
+                }
+              ]
+            },
+            "t_mapping(t_address,t_struct(Participation)3350_storage)": {
+              "label": "mapping(address => struct AvalaunchSale.Participation)"
+            },
+            "t_struct(Participation)3350_storage": {
+              "label": "struct AvalaunchSale.Participation",
+              "members": [
+                {
+                  "label": "amountBought",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "amountAVAXPaid",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "timeParticipated",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "roundId",
+                  "type": "t_uint256"
+                },
+                {
+                  "label": "isPortionWithdrawn",
+                  "type": "t_array(t_bool)dyn_storage"
+                }
+              ]
+            },
+            "t_array(t_bool)dyn_storage": {
+              "label": "bool[]"
+            },
+            "t_mapping(t_address,t_uint256)": {
+              "label": "mapping(address => uint256)"
+            },
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      },
+      "SalesFactory": {
+        "src": "contracts/sales/SalesFactory.sol:8",
+        "version": {
+          "withMetadata": "a1e5c5c419b20b6d6036392ab92187b9a3c938736ad3026d274f334a54fbe501",
+          "withoutMetadata": "20fe9fb9e736d6307a4148ae16422d68087f5496b7700dce0d12017212d536b9",
+          "linkedWithoutMetadata": "20fe9fb9e736d6307a4148ae16422d68087f5496b7700dce0d12017212d536b9"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "(address,address)",
+          "setAllocationStaking(address)",
+          "deploySale()",
+          "getNumberOfSalesDeployed()",
+          "getLastDeployedSale()",
+          "getAllSales(uint256,uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "SalesFactory",
+            "src": "contracts/sales/SalesFactory.sol:30"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "SalesFactory",
+              "label": "admin",
+              "type": "t_contract(IAdmin)3243",
+              "src": "contracts/sales/SalesFactory.sol:10"
+            },
+            {
+              "contract": "SalesFactory",
+              "label": "allocationStaking",
+              "type": "t_address",
+              "src": "contracts/sales/SalesFactory.sol:11"
+            },
+            {
+              "contract": "SalesFactory",
+              "label": "isSaleCreatedThroughFactory",
+              "type": "t_mapping(t_address,t_bool)",
+              "src": "contracts/sales/SalesFactory.sol:13"
+            },
+            {
+              "contract": "SalesFactory",
+              "label": "saleOwnerToSale",
+              "type": "t_mapping(t_address,t_address)",
+              "src": "contracts/sales/SalesFactory.sol:15"
+            },
+            {
+              "contract": "SalesFactory",
+              "label": "tokenToSale",
+              "type": "t_mapping(t_address,t_address)",
+              "src": "contracts/sales/SalesFactory.sol:16"
+            },
+            {
+              "contract": "SalesFactory",
+              "label": "allSales",
+              "type": "t_array(t_address)dyn_storage",
+              "src": "contracts/sales/SalesFactory.sol:19"
+            }
+          ],
+          "types": {
+            "t_contract(IAdmin)3243": {
+              "label": "contract IAdmin"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)"
+            },
+            "t_bool": {
+              "label": "bool"
+            },
+            "t_mapping(t_address,t_address)": {
+              "label": "mapping(address => address)"
+            },
+            "t_array(t_address)dyn_storage": {
+              "label": "address[]"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      }
+    },
+    {
+      "Admin": {
+        "src": "contracts/Admin.sol:4",
+        "version": {
+          "withMetadata": "275b7bc481f0b721122b4ea450c1481abc992b24e1fb8efd7a70b43cfc62febe",
+          "withoutMetadata": "7fe656311ed01c5a931bb8cb7c129e8e909dac22c45eba5a587a8383fc94e0c9",
+          "linkedWithoutMetadata": "7fe656311ed01c5a931bb8cb7c129e8e909dac22c45eba5a587a8383fc94e0c9"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "(address[])",
+          "addAdmin(address)",
+          "removeAdmin(address)",
+          "getAllAdmins()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Admin",
+            "src": "contracts/Admin.sol:19"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "contract": "Admin",
+              "label": "admins",
+              "type": "t_array(t_address)dyn_storage",
+              "src": "contracts/Admin.sol:7"
+            },
+            {
+              "contract": "Admin",
+              "label": "isAdmin",
+              "type": "t_mapping(t_address,t_bool)",
+              "src": "contracts/Admin.sol:10"
+            }
+          ],
+          "types": {
+            "t_array(t_address)dyn_storage": {
+              "label": "address[]"
+            },
+            "t_address": {
+              "label": "address"
+            },
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)"
+            },
+            "t_bool": {
+              "label": "bool"
+            }
+          },
+          "layoutVersion": "1.1"
+        }
+      }
+    }
+  ]
+}
