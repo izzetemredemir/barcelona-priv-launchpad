@@ -17,6 +17,30 @@
 
 }
 
+.wallet-info {
+  color: white;
+  font-size: 10px;
+
+  text-align: start;
+  width: 23rem;
+  margin-left: 1rem;
+  
+
+}
+
+.connectom {
+  border: 2px solid;
+  border-radius: 0.5rem;
+  background-color:rgba(130, 140,190, 0.89); ;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 11.5rem;
+  margin-left: 7rem;
+  gap: 20rem;
+  
+}
+
 
 .navlinks {
     color:white;
@@ -34,17 +58,33 @@
 }
 
 .button1 {
-    border-radius: 1rem;
-    border: none;
+    
+
     background-color: rgba(130, 140,190, 0.89);
-    margin-right: 30px;
+    border: none;
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 400;
     height: 50px;
     width: 11rem;
     padding: 5px;
+    border-bottom: 1px solid white;
     font-family:Arial, Helvetica, sans-serif;
+}
+
+.button2 {
+    
+ 
+  background-color: rgba(130, 140,190, 0.89);
+  border: none;
+  
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  height: 50px;
+  width: 11rem;
+  padding: 5px;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 .button1:hover {
@@ -67,6 +107,25 @@
 .vertical-devider {
   width: 0.5px;
   height: 200px ;
+}
+
+.coiinbasew {
+  border-bottom: 2px solid ;
+
+  background-color: rgba(130, 140,190, 0.89);
+  color: white;
+  width: 10rem;
+  font-size: 20px;
+  column-gap: 10rem;
+  border-radius: 1rem 1rem 0 0 ;
+
+ 
+  
+}
+
+.coiinbasew:hover {
+  background-color: white;
+  color: rgb(0, 2, 60);
 }
 
 .homme {

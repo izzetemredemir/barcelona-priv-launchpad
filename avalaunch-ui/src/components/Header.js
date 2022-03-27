@@ -73,10 +73,7 @@ const Header = (props) => {
 
 
       <div className='containert'>
-          <div>Connection Status: {active}</div>
-    <div>Account: {account}</div>
-    <div>Network ID: {chainId}</div>
- 
+       
      
         <header className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
         <a href="/" className="logo"> <img src='https://i.imgur.com/G5OYSzC.png' alt="" width="100" height="57"/> </a> 
@@ -96,9 +93,10 @@ const Header = (props) => {
         </div>
 
         <div className="col-md-3 text-end">
-          
-        <button onClick={() => { activate(CoinbaseWallet) }}>Coinbase Wallet</button>
-          <button className="button1" variant="primary" onClick={connectWalletPressed}>
+          <div className='connectom'>
+        <button className='button1' onClick={() => { activate(CoinbaseWallet) }}>Coinbase Wallet</button>
+        
+          <button className='button2'  onClick={connectWalletPressed}>
           {walletAddress.length > 0 ? (
             "Connected: " +
             String(walletAddress).substring(0, 6) +
@@ -106,7 +104,10 @@ const Header = (props) => {
             String(walletAddress).substring(38)
           ) : (
             <span>Connect Wallet</span>
+            
           )}</button>
+        
+       </div>
 
 
 

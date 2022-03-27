@@ -52,7 +52,8 @@ import "./Sales.css"
         </thead>
         <tbody>     
         {saleList.map((object, i) => 
-        <tr>         
+        <tr>    
+               
         <th scope="row">   {i} </th>
         <td><a href={'project?id='+saleList[i]}>Test Token</a></td>
         <td>{saleList[i]}</td>
